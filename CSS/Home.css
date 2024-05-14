@@ -1,0 +1,129 @@
+/* Estilos para el enzabezado */
+header {
+    color: #2ac605;
+    padding: 20px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* Estilos para el encabezado que contiene el logo y el texto */
+.Encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el logo y el texto. */
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 8%;
+    height: 8%;
+}
+
+/* Estilos para el texto del encabezado */
+.TituloTexto {
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos par el menú de navegación */
+.Navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Margen del menú */
+.menu {
+    margin: 0 10px;
+}
+
+/* Estilos para el texto del menú */
+a {
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 39px;
+    border-right: 1px solid black;
+}
+
+/* Estilos para el logo */
+.user-logo {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+/* Contenedor para información */
+.informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    gap: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Contenedor para cada grupo de logo y texto */
+.info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 0 35px; 
+    border-right: 1px solid black;
+}
+
+/* Elimina la línea de separación para el último grupo */
+.info-group:last-child {
+    border-right: none; 
+}
+
+/* Estilos para los logos */
+.informacion img {
+    width: 50px; 
+    height: 50px; 
+}
+
+/* Estilos para el texto */
+p {
+    margin-top: 5px; 
+    font-size: 30px; 
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul {
+    width: 400%;
+    display: flex;
+    animation: cambio 50s infinite alternate linear;
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+    flex: 1;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    100% { margin-left: -300%; }
+}
